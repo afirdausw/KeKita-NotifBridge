@@ -115,7 +115,6 @@ public class MainActivity extends AppCompatActivity {
                     .addOnCompleteListener(task -> {
                         if (task.isSuccessful()) {
                             prefs.edit().putBoolean(KEY_SERVICE_RUNNING, false).apply();
-
                             tvNotification.setText("Service Stopped");
                         } else {
                             Toast.makeText(this, "Gagal STOP service!", Toast.LENGTH_SHORT).show();
@@ -249,6 +248,10 @@ public class MainActivity extends AppCompatActivity {
         String c = client.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
         String o = option.replaceAll("[^a-zA-Z0-9]", "_").toLowerCase();
         return c + "_" + o;
+    }
+
+    public void onSettings(View view) {
+        startActivity(new Intent(getApplicationContext(), SettingsActivity.class));
     }
 
 }

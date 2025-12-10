@@ -28,6 +28,10 @@
             android:name=".Activity.WizardActivity"
             android:exported="true" />
 
+        <activity
+            android:name=".Activity.SettingsActivity"
+            android:exported="true" />
+
         <!-- Service -->
         <service
             android:name=".Firebase.FirebaseService"
