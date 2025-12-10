@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "222360537356",
+    "project_id": "kekita-notification",
+    "storage_bucket": "kekita-notification.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222360537356:android:267c98511fe95f9750a129",
+        "android_client_info": {
+          "package_name": "devyana.kekita.notifbridge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "222360537356-tj75227gmcla3uj34pp6c2t6hdr2au5j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5Pmx-GarJrzBUZ0Twuy4ItirMBDDIUMQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "222360537356-tj75227gmcla3uj34pp6c2t6hdr2au5j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

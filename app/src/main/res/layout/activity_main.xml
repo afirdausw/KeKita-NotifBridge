@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="#00000000"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:id="@+id/iv_client_logo"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                android:src="@mipmap/ic_launcher" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_client_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="..."
+            android:textColor="@android:color/black"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_info_box"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Notifikasi belum dipilih"
+            android:textColor="#555"
+            android:textSize="16sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_picker"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:letterSpacing="0"
+            android:paddingEnd="30dp"
+            android:text="Pilih Notifikasi"
+            android:textColor="#FFF"
+            app:backgroundTint="#3A459B"
+            app:cornerRadius="12dp"
+            app:icon="@drawable/twotone_settings"
+            app:iconSize="20dp"
+            app:iconTint="@color/white" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_start_service"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:letterSpacing="0"
+            android:paddingEnd="30dp"
+            android:text="Start - Service"
+            android:textColor="#FFF"
+            app:backgroundTint="#50AF52"
+            app:cornerRadius="12dp"
+            app:icon="@drawable/twotone_play_circle"
+            app:iconSize="20dp"
+            app:iconTint="@color/white" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_stop_service"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0"
+            android:paddingEnd="30dp"
+            android:text="Stop - Service"
+            android:textColor="#FF0000"
+            app:cornerRadius="12dp"
+            app:icon="@drawable/twotone_stop_circle"
+            app:iconSize="20dp"
+            app:iconTint="#FF0000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:strokeColor="#FF0000" />
+
+    </LinearLayout>
+
+</ScrollView>
